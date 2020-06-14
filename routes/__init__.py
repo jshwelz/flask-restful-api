@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 from views.comics import comics
 from views.docs import docs
 from globals import spec
@@ -24,18 +26,5 @@ def initialize_routes(api):
                     content = resp.get(status).get('schema')
                     if content:
                         pass
-                        # Check if mapping is present in global schema map
-                        # if GLOBAL_SCHEMA_MAP.get(content):
-                        #     val.update({
-                        #         'content': {
-                        #             'application/json': {
-                        #                 'schema': GLOBAL_SCHEMA_MAP[content]
-                        #             }
-                        #         }
-                        #     })
-                        # else:
-                        #     print("Mapping missing for the schema = ", content)
-                        # val.pop('schema')
             # Add paths to the spec
             spec.path(view=view, path=path, operations=operations)
-

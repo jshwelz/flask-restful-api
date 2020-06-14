@@ -4,7 +4,6 @@ __version__ = '1.0.0'
 __license__ = 'MIT'
 __author__ = 'Josh Welchez'
 __email__ = 'josh.welchez@gmail.com'
-__url__ = 'https://example.com'
 
 
 from flask import Flask, jsonify
@@ -20,7 +19,7 @@ def init_app():
 
     @app.route('/')
     def hello_world():
-        return 'Hello World!'
+        return 'Comics Api'
 
     routes.initialize_routes(app)
     register_commands(app)

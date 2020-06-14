@@ -2,8 +2,9 @@ from flask import Blueprint, jsonify
 from flask import request
 from globals import db
 from models.Comics import ComicsModel
-from schemas.comics import Comic, comic_schema
 from permissions import token_verification
+from schemas.comics import comic_schema
+
 
 comics = Blueprint('comics', __name__)
 

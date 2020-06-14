@@ -1,8 +1,5 @@
 from flask import Blueprint, jsonify
-from flask import request
 from globals import db, spec, config
-import json
-from permissions import token_verification
 
 docs = Blueprint('docs', __name__)
 

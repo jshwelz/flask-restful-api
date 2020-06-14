@@ -1,5 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 import jwt
-from flask import Flask, request, jsonify, make_response
+from flask import request, jsonify
 from functools import wraps
 from globals import config
 
