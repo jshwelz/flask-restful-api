@@ -9,6 +9,7 @@ from sqlalchemy_utils import database_exists, drop_database
 runner = init_app().test_cli_runner()
 admin_token = runner.invoke(args=['generate_admin_jwt', 'josh']).output
 
+
 # scope: Run once per test function. The setup portion is run before each test using the fixture.
 # autouse: Invoke fixture automatically without declaring a function argument explicitly.
 @pytest.fixture(scope='function', autouse=True)

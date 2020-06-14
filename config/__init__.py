@@ -11,5 +11,4 @@ class Config:
 	SECRET = os.environ.get('SECRET', str('foobar'))
 	DEBUG = os.environ.get('DEBUG', bool(
 		True))  # IMPORTANT: this must be set 'False' for production security of GET /token !!!
-	STACKDRIVER_LOGGING = os.environ.get('STACKDRIVER_LOGGING', bool(True))
 	URL = os.environ.get('URL', str('http://127.0.0.1:5000/'))
