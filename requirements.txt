@@ -1,6 +1,6 @@
 apispec==3.3.0
 alembic==1.4.2
-Flask==1.1.2
+Flask==2.3.2
 flask-apispec==0.8.8
 marshmallow==3.5.2
 pyjwt==1.7.1
